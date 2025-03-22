@@ -1,12 +1,12 @@
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default function WelcomeScreen({ navigation }) {
+export default function Play({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome</Text>
+      <Text style={styles.title}>Here is the game</Text>
       <Button
-        title="Go to Hi screen"
-        onPress={() => navigation.navigate('Hi')}
+        title="Home"
+        onPress={() => navigation.goBack()}
       />
     </View>
   );

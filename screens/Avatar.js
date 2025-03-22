@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Image, Button } from 'react-native';
 
-export default function HiScreen({ navigation }) {
+export default function Avatar({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hi</Text>
+      <Text style={styles.title}>Player 1, choose your avatar!</Text>
+      <TouchableOpacity key="1">
+        <Image source={require('../assets/alien_girl.png')}></Image>
+      </TouchableOpacity>
       <Button
-        title="Go back to Welcome"
+        title="Home"
         onPress={() => navigation.goBack()}
       />
     </View>
