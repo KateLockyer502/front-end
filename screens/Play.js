@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 export default function Play({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Here is the game</Text>
+      <Text style={styles.title}>Play HERE</Text>
+       
       <Button
         title="Home"
         onPress={() => navigation.goBack()}

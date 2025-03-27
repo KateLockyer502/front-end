@@ -2,17 +2,19 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Video } from 'expo-av';
 
 export default function Home({ navigation }) {
+
   return (
-    
     <View style={styles.container}>
       <Video
         source={require('../assets/geo_bg.mp4')} //set background video
-        rate={1.0}
         isMuted={true} 
         resizeMode="cover" 
         shouldPlay
         isLooping
-        style={styles.backgroundVideo} 
+        style={styles.backgroundVideo}
+        //catch errors
+        onError={(error) => console.error('Video error:', error)}
+        onLoad={() => console.log('Video loaded successfully')}
       />
       <View style={styles.overlay}>
         <Text style={styles.title}>FIDUCIAL FRONTIERS</Text> 
@@ -20,7 +22,7 @@ export default function Home({ navigation }) {
           style={styles.button}
           onPress={() => navigation.navigate('Avatar')} //navigate to choose your avatar
         >
-          <Text style={styles.buttonText}>PLAY</Text> 
+          <Text style={styles.buttonText}>START</Text> 
         </TouchableOpacity>
       </View>
     </View>

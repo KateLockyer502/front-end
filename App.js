@@ -11,9 +11,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }}/>
-        <Stack.Screen name="Play" component={Play} options={{ headerShown: false }}/>
-        <Stack.Screen name="Avatar" component={Avatar} options={{ headerShown: false }}/>
+        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
+        <Stack.Screen name="Play" component={Play} options={{ headerShown: false }} />
+        <Stack.Screen name="Avatar" component={Avatar} options={{ headerShown: false }} />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
