@@ -8,22 +8,30 @@ export default function Avatar({ navigation }) {
     <View style={styles.container}>
       <Text style={styles.title}>Player 1 - select your avatar</Text>
       <View style={styles.avatarDisplay}>
-    
+
         <TouchableOpacity id="1">
           <Image source={require('../assets/alien_girl.png')} style={styles.avatarImage}></Image>
         </TouchableOpacity>
+        {/* Source: https://pixabay.com/illustrations/extraterrestrial-alien-7004805/, 
+        Eleatell - Pixabay, Accessed 22/03/25 */}
 
         <TouchableOpacity id="2">
           <Image source={require('../assets/fox_boy.png')} style={styles.avatarImage}></Image>
         </TouchableOpacity>
+        {/* Source: https://pixabay.com/vectors/fox-head-cartoon-angry-colorful-307313/, 
+        Clker-Free-Vector-Images - Pixabay, Accessed 23/03/25 */}
 
         <TouchableOpacity id="3">
           <Image source={require('../assets/warrior.png')} style={styles.avatarImage}></Image>
         </TouchableOpacity>
+        {/* Source: https://pixabay.com/vectors/warrior-cartoon-character-fighter-309148/, 
+         Clker-Free-Vector-Images - Pixabay, Accessed 25/03/25 */}
 
         <TouchableOpacity id="4">
           <Image source={require('../assets/octopus_boy.png')} style={styles.avatarImage}></Image>
         </TouchableOpacity>
+        {/* Source: https://pixabay.com/vectors/monster-cartoon-demon-character-8589461/,
+         u_fg0tkeqgiy - Pixabay, Acessed 25/03/25*/}
 
       </View>
       <Button

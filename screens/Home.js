@@ -12,10 +12,9 @@ export default function Home({ navigation }) {
         shouldPlay
         isLooping
         style={styles.backgroundVideo}
-        //catch errors
-        onError={(error) => console.error('Video error:', error)}
-        onLoad={() => console.log('Video loaded successfully')}
       />
+      {/* Source: https://pixabay.com/videos/particles-geometry-lines-201735/, 
+      olenchic - Pixabay, Accessed 22/03/25 */}
       <View style={styles.overlay}>
         <Text style={styles.title}>FIDUCIAL FRONTIERS</Text> 
         <TouchableOpacity 
